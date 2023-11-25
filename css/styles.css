@@ -8,6 +8,7 @@
 body {
   background-color: #000;
 
+
 }
 
 a {
@@ -17,6 +18,8 @@ a {
 /* Style the navigation bar */
 nav {
     height: 50px;
+    background: url(../img/blockDAG_bg.png) no-repeat center center fixed;
+    opacity: 0.5;
   }
   
   nav ul {
