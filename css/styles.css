@@ -5,11 +5,10 @@
     box-sizing: border-box;
   }
 
-body {
-  background-color: #000;
-  font-family: Diatype,var(--font-family-sans-serif);
-
-}
+  body {
+    background-color: #000;
+    font-family: 'Roboto', sans-serif; /* Change the font family here */
+  }
 
 a {
     color: #fff;
@@ -18,7 +17,7 @@ a {
 /* Style the navigation bar */
 nav {
     height: 50px;
-    background: url(../img/blockDAG_bg.png) no-repeat center center fixed;
+    /*background: url(../img/blockDAG_bg.png) no-repeat center center fixed; */
     opacity: 0.5;
   }
   
@@ -94,3 +93,35 @@ nav {
   footer p {
     margin: 0;
   }
+
+  section {
+    margin: 30px 0;
+    border: 2px solid #333; /* Closer to black */
+    border-radius: 10px; /* Rounded border */
+    background-color: #1a221c; /* Fill color */
+    padding: 20px; /* Padding */
+}
+
+  .build-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.large-build-button {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #216914;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline from the link */
+    margin-left: 20px; /* Spacing between image and button */
+}
+
+/* Optional: Add a hover effect */
+.large-build-button:hover {
+    background-color: #0056b3;
+}
+
