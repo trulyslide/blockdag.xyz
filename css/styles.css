@@ -14,6 +14,36 @@ a {
     color: #fff;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  max-width: 800px;
+  flex: 1 0 auto;
+}
+
+.right-column {
+  flex: 0 1 300px; /* Adjust this value to change the width of the right column */
+  margin: 50px 0  0 20px; /* Spacing between columns */
+}
+
+@media (max-width: 768px) { /* Adjust this value based on when you want to stack the columns */
+  .flex-container {
+      flex-direction: column;
+  }
+
+  .main-content, .right-column {
+      flex: none;
+  }
+}
+
+.right-column li {
+  font-size: 0.8em; /* Adjust this value to change the size of the list items */
+  margin-bottom: 10px; /* Adjust this value to change the spacing between list items */
+}
+
 /* Style the navigation bar */
 nav {
     height: 50px;
@@ -62,7 +92,6 @@ nav {
   
   /* Style the main content */
   main {
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     color:#fff;
