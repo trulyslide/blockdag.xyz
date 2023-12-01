@@ -27,6 +27,7 @@ img {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center flex items horizontally */
 }
 
 .main-content {
