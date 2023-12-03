@@ -10,9 +10,9 @@
 module.exports = {
   siteMetadata: {
     title: `BlockDAG - The next evolution of blockchain technology`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `BlockDAG is next evolution of blockchain technology, enabling native Layer 1 scaling on an unprecedented level, while maintaining high levels of security and decentralization.`,
     author: `@blockdag_xyz`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://blockdag.xyz`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -57,6 +57,12 @@ module.exports = {
     },
     `gatsby-transformer-remark`, // This plugin transforms the markdown files into HTML
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        // options here
+      },
+    },
 
   ],
 }
