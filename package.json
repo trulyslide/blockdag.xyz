@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "gatsby-plugin-google-gtag": "^5.12.3",
-    "gatsby-source-filesystem": "^5.12.1",
-    "gatsby-transformer-remark": "^6.12.3"
-  }
-}
