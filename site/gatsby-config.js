@@ -56,5 +56,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`, // This plugin transforms the markdown files into HTML
+    `gatsby-plugin-react-helmet`,
+
   ],
 }

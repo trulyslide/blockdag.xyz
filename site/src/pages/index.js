@@ -1,14 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import Sidebar from "../components/sidebar"
 import Footer from "../components/footer"
 
-const IndexPage = () => (
-  <main>
-    <Header />
-    <div className="flex-container">
-      <div className="main-content">
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+
+  return (
+    <main>
+      <Helmet>
+        <title>{data.site.siteMetadata.title}</title>
+      </Helmet>
+      <Header />
+      <div className="flex-container">
+        <div className="main-content">
         <section>
           <h2>Build on BlockDAG</h2>
           <p>BlockDAG is next evolution of blockchain technology, enabling native Layer 1 scaling on an unprecedented level, while maintaining high levels of security and decentralization.</p>
@@ -45,7 +60,8 @@ const IndexPage = () => (
       <Sidebar />
     </div>
     <Footer />
-  </main>
-)
+    </main>
+  )
+}
 
 export default IndexPage
