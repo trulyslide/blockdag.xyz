@@ -24,7 +24,13 @@ const Layout = ({ children, pageTitle, includeSidebar = false }) => {
         <title>{pageTitle ? `${pageTitle} | ${defaultTitle}` : defaultTitle}</title>
       </Helmet>
       <Header />
-      <main>{children}</main>
+      <main>
+        <div className="flex-container">
+          <div className="main-content">
+            {children}
+          </div>
+        </div>
+      </main>
       {includeSidebar && <Sidebar />}
       <Footer />
     </>
