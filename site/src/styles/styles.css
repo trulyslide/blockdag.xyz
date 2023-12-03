@@ -31,7 +31,6 @@ img {
 }
 
 .main-content {
-  max-width: 800px;
   flex: 1 0 auto;
 }
 
@@ -104,6 +103,7 @@ nav {
   
   /* Style the main content */
   main {
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
