@@ -57,32 +57,39 @@ img {
 
 /* Style the navigation bar */
 nav {
-    height: 50px;
-    /*background: url(../img/blockDAG_bg.png) no-repeat center center fixed; */
-    opacity: 0.5;
+  display: flex;
+  justify-content: space-between; /* Aligns items horizontally and distributes space */
+  align-items: center; /* Vertically aligns items in the center */
+  padding: 10px 20px; /* Adds padding around the navigation */
+  background-color: #1a221c; /* Sets a background color */
+  border-bottom: 2px solid #333; /* Adds a border at the bottom */
+}
+
+/* Style the links in the navigation */
+nav a {
+  color: #fff; /* Sets the text color */
+  text-decoration: none; /* Removes underline from the links */
+  margin: 0 15px; /* Adds margin to the left and right of each link */
+  font-size: 18px; /* Sets the font size */
+}
+
+/* Adds a hover effect to the links */
+nav a:hover {
+  color: #216914; /* Changes text color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stacks the items vertically */
+    align-items: flex-start; /* Aligns items to the start */
   }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
   nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+    margin: 5px 0; /* Adjusts margin for vertical layout */
   }
-  
+}
+
   /* Style the header */
   header {
     display: flex;
@@ -107,6 +114,21 @@ nav {
     margin: 0 auto;
     padding: 20px;
   }
+
+  main h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: block;
+    background-color: black;
+    color: white; /* Ensures text is readable on the black background */
+    padding: 10px 20px; /* Adds some space around the text */
+    border-radius: 5px; /* Optional: rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for a 3D effect */
+    text-align: center; /* Centers the text */
+    width: fit-content; /* Adjusts the width to fit the content */
+    margin: 20px auto; /* Centers the element in the main container */
+  }
+  
   
   main h2 {
     font-size: 24px;
