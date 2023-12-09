@@ -28,7 +28,7 @@ const IndexPage = () => {
           <h2>Build on BlockDAG</h2>
           <p>BlockDAG is next evolution of blockchain technology, enabling native Layer 1 scaling on an unprecedented level, while maintaining high levels of security and decentralization.</p>
           <div className="build-container">
-            <a href="/build"><img src="img/build_on_blockdag.png" alt="Build on BlockDAG" width="500" /></a>
+            <a href="build.html"><img src="img/build_on_blockdag.png" alt="Build on BlockDAG" width="500" /></a>
             <Link to="/build" className="large-build-button">Build</Link>
           </div>  
         </section>

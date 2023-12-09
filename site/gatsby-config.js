@@ -48,6 +48,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`, // The folder where your markdown files are stored
+      },
+    },
     `gatsby-transformer-remark`, // This plugin transforms the markdown files into HTML
     `gatsby-plugin-react-helmet`,
     {
