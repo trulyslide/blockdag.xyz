@@ -15,13 +15,15 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   result.data.allFile.edges.forEach(({ node }) => {
-    // Remove the file extension from the path
-    const pathWithoutExtension = node.relativePath.replace(/\.[^/.]+$/, "");
-
-    createPage({
-      path: pathWithoutExtension, // Use the modified path
-      component: path.resolve(`./src/pages/${node.relativePath}`),
-      // Include additional context if needed
-    });
+    if (node.relativePath !== 'index.js') {
+      const pathWithoutExtension = node.relativePath.replace(/\.[^/.]+$/, "");
+  
+      createPage({
+        path: pathWithoutExtension, // Use the modified path
+        component: path.resolve(`./src/pages/${node.relativePath}`),
+        // Include additional context if needed
+      });
+    }
   });
+  
 };
