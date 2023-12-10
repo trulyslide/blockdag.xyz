@@ -15,6 +15,13 @@ module.exports = {
     siteUrl: `https://blockdag.xyz`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    }, 
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -48,14 +55,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`, // The folder where your markdown files are stored
-      },
-    },
-    `gatsby-transformer-remark`, // This plugin transforms the markdown files into HTML
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sitemap`,

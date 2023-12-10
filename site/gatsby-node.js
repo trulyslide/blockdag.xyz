@@ -4,25 +4,20 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allFile(filter: {extension: {in: ["js", "ts"]}}) {
         edges {
           node {
-            frontmatter {
-              path
-            }
+            relativePath
           }
         }
       }
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  result.data.allFile.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
-      component: path.resolve(`./src/templates/markdownPageTemplate.js`),
-      context: {
-        pathSlug: node.frontmatter.path,
-      },
+      path: node.relativePath,
+      component: path.resolve(`./src/pages/${node.relativePath}`),
     })
   })
 }

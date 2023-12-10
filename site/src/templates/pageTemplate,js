@@ -1,0 +1,27 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const PageTemplate = ({ pageContext }) => {
+  const { component: Component, data } = pageContext;
+
+  // Ensure Component is a valid React element
+  if (typeof Component !== 'function' && typeof Component !== 'object') {
+    // Handle error or return null or a fallback component
+    return <div>Error: Invalid component</div>;
+  }
+
+  return (
+    <div>
+      <Component data={data} />
+    </div>
+  );
+};
+
+PageTemplate.propTypes = {
+  pageContext: PropTypes.shape({
+    component: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+    data: PropTypes.any // specify more detailed prop type if possible
+  }).isRequired
+};
+
+export default PageTemplate;
