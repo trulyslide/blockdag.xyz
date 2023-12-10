@@ -17,13 +17,13 @@ const IndexPage = () => {
   `);
 
   return (
-    <main>
+    <>
       <Helmet>
         <title>{data.site.siteMetadata.title}</title>
       </Helmet>
       <Header />
-      <div className="flex-container">
-        <div className="main-content">
+      <main className="flex-container">
+        <article className="main-content">
         <section>
           <h2>Build on BlockDAG</h2>
           <p>BlockDAG is next evolution of blockchain technology, enabling native Layer 1 scaling on an unprecedented level, while maintaining high levels of security and decentralization.</p>
@@ -56,11 +56,11 @@ const IndexPage = () => {
           <p>DAGs have been used for a long time in crypto projects (for example IOTA). Typically though, the transactions themselves are linked in a DAG structure, with each transaction needing to validate the previous ones. BlockDAG's use of traditional blocks provides advantages in scalability, security, and confirmation times.</p>
           <img src="img/Taraxa_meme-3.png" alt="Taraxa Meme" width="500" />
         </section>
-      </div>
+      </article>
       <Sidebar />
-    </div>
-    <Footer />
-    </main>
+      </main>
+      <Footer />
+    </>
   )
 }
 

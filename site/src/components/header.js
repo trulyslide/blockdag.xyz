@@ -12,7 +12,7 @@ const Header = () => (
         What is BlockDAG?
       </Link>
       <Link to="/build" className="nav-link">
-        Build on BLockDAG
+        Build on BlockDAG
       </Link>
 
     </nav>
