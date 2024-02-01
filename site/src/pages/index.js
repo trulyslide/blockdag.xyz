@@ -36,11 +36,11 @@ const IndexPage = () => {
         <section>
           <h2>Who is using BlockDAG?</h2>
           <h3>Taraxa</h3>
-          <p>Taraxa (<a href="http://taraxa.io">taraxa.io</a>) - Taraxa is the first modern blockchain project to take advantage of BlockDAG. Founded in 2018, with years of research and a meticulous refactoring of the Ethereum Virtual Machine (EVM) to takes advantage of BlockDAG while maintaining compatibility with popular Dapp structures and tooling. Taraxa is a Layer 1 solution that aims to enable Web3 to solve real world decentralization problems.</p>
-          <p><a href="http://taraxa.io"><img src="img/taraxa_logo_transparent_dark_bg.png" alt="Taraxa Logo" width="250" /></a></p>
+          <p><a href="https://taraxa.network">Taraxa Network</a>  - Taraxa is the first modern blockchain project to take advantage of BlockDAG. Founded in 2018, with years of research and a meticulous refactoring of the Ethereum Virtual Machine (EVM) to takes advantage of BlockDAG while maintaining compatibility with popular Dapp structures and tooling. Taraxa is a Layer 1 solution that aims to enable Web3 to solve real world decentralization problems.</p>
+          <p><a href="https://taraxa.io"><img src="img/taraxa_logo_transparent_dark_bg.png" alt="Taraxa Logo" width="250" /></a></p>
         
           <h3>Kaspa</h3>
-          <p>Kaspa (<a href="http://kaspa.org">kaspa.org</a>) - Kaspa is a true currency token in the vain of the original Bitcoin. Founded in 2021 by some of the mathematicians who developed the Ghost consensus protocol, which was revolutionary in taking advantage of the BlockDAG structure to scale chains. Like Bitcoin, Kaspa is Proof of Work (PoW) and aims to be a digital silver, a true fast, decentralized payment platform in the spirit of Satoshi's original vision.</p>
+          <p>A true currency token in the vain of the original Bitcoin. Founded in 2021 by some of the mathematicians who developed the Ghost consensus protocol, which was revolutionary in taking advantage of the BlockDAG structure to scale chains. Like Bitcoin, Kaspa is Proof of Work (PoW) and aims to be a digital silver, a true fast, decentralized payment platform in the spirit of Satoshi's original vision.</p>
         </section>
 
         <section>
