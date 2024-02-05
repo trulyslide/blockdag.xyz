@@ -39,7 +39,7 @@ const IndexPage = () => {
           <div className="build-container">
             <a href="build.html"><img src="img/build_on_blockdag.png" alt="Build on BlockDAG" width="500" /></a>
             <Link to="/build" className="large-build-button">Build</Link>
-          </div>  
+          </div>
         </section>
 
         <section>
