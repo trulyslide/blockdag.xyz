@@ -29,7 +29,7 @@ const IndexPage = () => {
           <p>Feb 5, 2023 -  The Taraxa Protocol Foundation has launched a $10 million Grant Program to drive growth in Taraxa’s unique EVM-compatible blockDAG Layer-1 ecosystem. The Taraxa Grant Program is open to any individual, team, and organizations of any type. Funds will be granted specifically for technical development with an emphasis on driving usage and growth within the Taraxa ecosystem, and are disbursed according to quantifiable milestones.</p>
           <div className="build-container">
             <a href="https://www.taraxa.io/grant/"><img src="https://www.taraxa.io/static/taraxa_io/img/background/background_grant.jpg" alt="Build on BlockDAG" width="500" /></a>
-            <Link to="https://www.taraxa.io/grant/" className="large-build-button">Taraxa BlockDAG GRant Program</Link>
+            <Link to="https://www.taraxa.io/grant/" className="large-build-button">Taraxa BlockDAG Grant Program</Link>
           </div>  
         </section>
         
@@ -45,7 +45,7 @@ const IndexPage = () => {
         <section>
           <h2>Who is using BlockDAG?</h2>
           <h3>Taraxa</h3>
-          <p><a href="https://taraxa.network">Taraxa Network</a>  - Taraxa is the first modern blockchain project to take advantage of BlockDAG. Founded in 2018, with years of research and a meticulous refactoring of the Ethereum Virtual Machine (EVM) to takes advantage of BlockDAG while maintaining compatibility with popular Dapp structures and tooling. Taraxa is a Layer 1 solution that aims to enable Web3 to solve real world decentralization problems.</p>
+          <p><a href="https://taraxa.io">Taraxa BlockDAG</a>  - Taraxa is the first modern blockchain project to take advantage of BlockDAG. Founded in 2018, with years of research and a meticulous refactoring of the Ethereum Virtual Machine (EVM) to takes advantage of BlockDAG while maintaining compatibility with popular Dapp structures and tooling. Taraxa is a Layer 1 solution that aims to enable Web3 to solve real world decentralization problems.</p>
           <p><a href="https://taraxa.io"><img src="img/taraxa_logo_transparent_dark_bg.png" alt="Taraxa Logo" width="250" /></a></p>
         </section>
 
