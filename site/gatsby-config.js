@@ -51,7 +51,6 @@ module.exports = {
       options: {
         trackingIds: [
           "G-82HFS5Q55R", // Google Analytics / GA
-          "AW-1069557388", // Google Ads / Adwords / AW
         ],
       },
     },

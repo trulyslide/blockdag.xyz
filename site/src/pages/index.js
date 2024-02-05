@@ -25,6 +25,15 @@ const IndexPage = () => {
       <main className="flex-container">
         <article className="main-content">
         <section>
+          <h2>Taraxa Announces $10M Grant Program to Build on BlockDAG!</h2>
+          <p>Feb 5, 2023 -  The Taraxa Protocol Foundation has launched a $10 million Grant Program to drive growth in Taraxa’s unique EVM-compatible blockDAG Layer-1 ecosystem. The Taraxa Grant Program is open to any individual, team, and organizations of any type. Funds will be granted specifically for technical development with an emphasis on driving usage and growth within the Taraxa ecosystem, and are disbursed according to quantifiable milestones.</p>
+          <div className="build-container">
+            <a href="https://www.taraxa.io/grant/"><img src="https://www.taraxa.io/static/taraxa_io/img/background/background_grant.jpg" alt="Build on BlockDAG" width="500" /></a>
+            <Link to="https://www.taraxa.io/grant/" className="large-build-button">Taraxa BlockDAG GRant Program</Link>
+          </div>  
+        </section>
+        
+        <section>
           <h2>Build on BlockDAG</h2>
           <p>BlockDAG is next evolution of blockchain technology, enabling native Layer 1 scaling on an unprecedented level, while maintaining high levels of security and decentralization.</p>
           <div className="build-container">
@@ -38,9 +47,6 @@ const IndexPage = () => {
           <h3>Taraxa</h3>
           <p><a href="https://taraxa.network">Taraxa Network</a>  - Taraxa is the first modern blockchain project to take advantage of BlockDAG. Founded in 2018, with years of research and a meticulous refactoring of the Ethereum Virtual Machine (EVM) to takes advantage of BlockDAG while maintaining compatibility with popular Dapp structures and tooling. Taraxa is a Layer 1 solution that aims to enable Web3 to solve real world decentralization problems.</p>
           <p><a href="https://taraxa.io"><img src="img/taraxa_logo_transparent_dark_bg.png" alt="Taraxa Logo" width="250" /></a></p>
-        
-          <h3>Kaspa</h3>
-          <p>A true currency token in the vain of the original Bitcoin. Founded in 2021 by some of the mathematicians who developed the Ghost consensus protocol, which was revolutionary in taking advantage of the BlockDAG structure to scale chains. Like Bitcoin, Kaspa is Proof of Work (PoW) and aims to be a digital silver, a true fast, decentralized payment platform in the spirit of Satoshi's original vision.</p>
         </section>
 
         <section>
